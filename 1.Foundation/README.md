@@ -1,13 +1,29 @@
 # Foundation
 
-What you will learn:
+| |Index|
+|---|---|
+|1|Data, Data ecosystem, Data-driven decision-making|
+|2|Data analysis vs Data analytics|
+|3|Data analyst vs Data scientist|
+|4|Data job roles|
+|5|Data analysis process|
+|6|Data Insights/Value|
+|7|Analytical skills|
+|8|Analytical thinking|
+|9|Data life cycle|
+|10|Data analyst tools|
+|11|Issue, Question, Problem|
+|12|Fairness|
+|13|Case Study|
+
+What to learn:
 - Real-life roles and responsibilities of a junior data analyst
 - How businesses transform data into actionable insights
 - Spreadsheet basics
 - Database and query basics
 - Data visualization basics
 
-Skill sets you will build:
+Skill sets to build:
 - Using data in everyday life
 - Thinking analytically
 - Applying tools from the data analytics toolkit
@@ -46,7 +62,7 @@ Data scientists create new questions using data, while analysts find answers to 
 
 ![Data job roles](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/data_analyst.jpg)
 
-## 5 Data analysis process
+## 5 <a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/data_analysis_process.md'>Data analysis process</a>
 The six phases of the data analysis process help answer business challenges
 | |Phase|Definition|Remark|
 |---|---|---|---|
@@ -66,14 +82,14 @@ The six phases of the data analysis process help answer business challenges
 |4|Serve customers|
 |5|Make thoughtful decisions|
 
-## 7 Three disciplines
+### Three disciplines
 | |Discipline|
 |---|---|
 |1|Machine Learning|
 |2|Statistics|
 |3|Data Analytics|
 
-## 8 Analytical skills
+## 7 Analytical skills
 Qualities and characteristics associated with using facts to solve problems
 | |Skill|Definition|
 |---|---|---|
@@ -83,7 +99,7 @@ Qualities and characteristics associated with using facts to solve problems
 |4|Data design|How you organize information.|
 |5|Data strategy|The management of the people, processes, and tools used in data analysis|
 
-## 9 Analytical thinking
+## 8 Analytical thinking
 Identifying and defining a problem and then solving it by using data in an organized step-by-step manner
 | |Item|Definition|
 |---|---|---|
@@ -101,7 +117,7 @@ Root cause: The reason why a problem occurs
 ### 8.2 Gap analysis
 A method for examining and evaluating how a process works currently in order to get where you want to be in the future
 
-## 10 Data life cycle
+## 9 Data life cycle
 | |Stage|Definition|
 |---|---|---|
 |1|Planning|Decide what kind of data is needed, how it will be managed, and who will be responsible for it.|
@@ -111,7 +127,7 @@ A method for examining and evaluating how a process works currently in order to 
 |5|Archive|Keep relevant data stored for long-term and future reference.|
 |6|Destroy|Remove data from storage and delete any shared copies of the data.|
 
-## 11 Data analyst tools
+## 10 Data analyst tools
 | |Tool|
 |---|---|
 |1|Spreadsheets(Microsoft Excel, Google Sheets)|
@@ -119,14 +135,14 @@ A method for examining and evaluating how a process works currently in order to 
 |3|Visualization(Tableau, Looker)|
 |4|Programming Languages(Python, R)|
 
-## 12 Issue, Question, Problem
+## 11 Issue, Question, Problem
 |Item|Definition|
 |---|---|
 |Issue|A topic or subject to investigate|
 |Question|Designed to discover information|
 |Problem|An obstacle or complication that needs to be worked out|
 
-## 13 Fairness
+## 12 Fairness
 Ensuring that your analysis doesn't create or reinforce bias
 | |Practice|
 |---|---|
@@ -136,7 +152,7 @@ Ensuring that your analysis doesn't create or reinforce bias
 |4|Use oversampling effectively|
 |5|Think about fairness from beginning to end|
 
-## 14 Case Study
+## 13 Case Study
 | |Topic|Case|
 |---|---|---|
 |1|Data analysis process|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case1%20The%20retirement%20contribution%20dilemma.md'>The retirement contribution dilemma</a>|
