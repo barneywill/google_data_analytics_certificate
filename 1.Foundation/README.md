@@ -44,6 +44,8 @@ Data scientists create new questions using data, while analysts find answers to 
 |5|Data specialist|organizes or converts data for use in databases or software systems|
 |6|Operations analyst|analyzes data to assess the performance of business operations and workflows|
 
+![Data job roles](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/data_analyst.jpg)
+
 ## 5 Data analysis process
 The six phases of the data analysis process help answer business challenges
 | |Phase|Definition|Remark|
@@ -141,5 +143,5 @@ Ensuring that your analysis doesn't create or reinforce bias
 |2|Analytical skills|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case2%20Use%20data%20to%20create%20better%20movies.md'>Use data to create better movies</a>|
 |3|Root cause analysis|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case3%20Boost%20customer%20service.md'>Boost customer service</a>|
 |4|Root cause analysis|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case4%20Advance%20quality%20control.md'>Advance quality control</a>|
-|5|Fairness|Assess teacher performance|
+|5|Fairness|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case5%20Assess%20teacher%20performance.md'>Assess teacher performance</a>|
 
