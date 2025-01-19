@@ -1,4 +1,4 @@
-# Ask
+# Ask Questions to Make Data-Driven Decisions
 
 What you will learn:
 - How data analysts solve problems with data
