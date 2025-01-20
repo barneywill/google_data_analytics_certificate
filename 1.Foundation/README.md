@@ -153,7 +153,7 @@ Ensuring that your analysis doesn't create or reinforce bias
 |5|Think about fairness from beginning to end|
 
 ## 13 Case Study
-| |Topic|Case|
+| |Category|Case|
 |---|---|---|
 |1|Data analysis process|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case1%20The%20retirement%20contribution%20dilemma.md'>The retirement contribution dilemma</a>|
 |2|Analytical skills|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/Case2%20Use%20data%20to%20create%20better%20movies.md'>Use data to create better movies</a>|

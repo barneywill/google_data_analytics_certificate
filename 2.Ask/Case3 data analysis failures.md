@@ -1,0 +1,10 @@
+
+## 1 Coke launch failure
+In 1985, New Coke was launched, replacing the classic Coke formula. The company had done taste tests with 200,000 people and found that test subjects preferred the taste of New Coke over Pepsi, which had become a tough competitor. Based on this data alone, classic Coke was taken off the market and replaced with New Coke. The company thought this was the solution to take back the market share that had been lost to Pepsi.
+
+But as it turns out, New Coke was very unpopular—and the company ended up losing tens of millions of dollars. The data seemed correct, but it was incomplete: The data didn't consider how customers would feel about New Coke replacing classic Coke. The company’s decision to retire classic Coke was a data-driven decision based on incomplete data.
+
+## 2 Mars Orbiter loss
+In 1999, NASA lost the $125 million Mars Climate Orbiter even though the teams had good data. The spacecraft burned to pieces because of poor collaboration and communication. The Orbiter’s navigation team was using the International System of Units (newtons) for their force calculations, but the engineers who built the spacecraft used the English Engineering Units system (pounds) for force calculations.
+
+No one realized there was a problem until the Orbiter burst into flames in the Martian atmosphere. Later, a NASA review board investigating the cause of the problem discovered the issue was in the software that controlled the thrusters. One program calculated the thrusters’ force in pounds; another program working with the data assumed it was in newtons. The software controllers were making data-driven decisions to adjust the thrust based on 100% accurate data, but these decisions were wrong because of inaccurate assumptions when interpreting it. The two teams might have communicated so they picked a single unit of measure, or so the analysts would have known that conversion was a necessary step in the process to prepare the data. A conversion of the data from one system of measurement to the other could have prevented the loss. 
