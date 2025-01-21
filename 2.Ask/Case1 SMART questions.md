@@ -61,7 +61,7 @@ Asking thorough and specific questions means clarifying details until you get to
 
 
 ## 3 More
-### 3.1 retail
+### 3.1 Retail
 If you have a conversation with someone who works in retail, you might lead with questions like: 
 - Specific: Do you currently use data to drive decisions in your business? If so, what kind(s) of data do you collect, and how do you use it?
 - Measurable: Do you know what percentage of sales is from your top-selling products?
@@ -69,7 +69,7 @@ If you have a conversation with someone who works in retail, you might lead with
 - Relevant: How often do you review data from your business?
 - Time-bound: Can you describe how data helped you make good decisions for your store(s) this past year?
 
-### 3.2 teacher
+### 3.2 Teacher
 If you are having a conversation with a teacher, you might ask different questions, such as: 
 - Specific: What kind of data do you use to build your lessons?
 - Measurable: How well do student benchmark test scores correlate with their grades?
@@ -77,7 +77,7 @@ If you are having a conversation with a teacher, you might ask different questio
 - Relevant: Have you shared grading data with an entire class? If so, do students seem to be more or less motivated, or about the same?
 - Time-bound: In the last five years, how many times did you review data from previous academic years?
 
-### 3.3 ice cream shop
+### 3.3 Ice cream shop
 If you are having a conversation with a small business owner of an ice cream shop, you could ask:
 - Specific: What data do you use to help with purchasing and inventory?
 - Measurable: Can you order (rank) these factors from most to least influential on sales: price, flavor, and time of year (season)?
@@ -85,3 +85,9 @@ If you are having a conversation with a small business owner of an ice cream sho
 - Relevant: How do you advertise to or communicate with customers?
 - Time-bound: What does your year-over-year sales growth look like for the last three years?
 
+### 3.4 Lettuce growth days
+- Specific: Is there a connection between humidity and temperature? 
+- Measurable: How much growth is normal or expected over a one-week period?
+- Action-oriented: If total dissolved solids are increased when growing lettuce, will it shorten the time needed for the plants to reach maturity?
+- Relevant: Based on the dataset, how can predictions about growth be made given the conditions?
+- Time-bound: What is the date range for this dataset? Do we need an understanding of this data for next season?

@@ -30,12 +30,21 @@ Skill sets to build:
 - Showing trends and patterns with data visualizations
 - Ensuring your data analysis is fair
 
-## 1 Data, Data ecosystem, Data-driven decision-making
+## 1 Data, Context, Data ecosystem, Data-driven decision-making
 |Name|Definition|
 |---|---|
 |Data|A collection of facts|
+|Context|the condition and circumstances that surround and give meaning to the data.|
 |Data ecosystems|The various elements that interact with one another in order to produce, manage, store, organize, analyze, and share data.|
 |Data-driven decision-making|Using facts to guide business strategy.|
+
+### Context
+- Who
+- What
+- Where
+- When
+- Why
+- How
 
 ## 2 Data analysis vs Data analytics
 |Data analysis|Data analytics|
@@ -49,6 +58,8 @@ Skill sets to build:
 
 #### Defference
 Data scientists create new questions using data, while analysts find answers to existing questions by creating insights from data sources. 
+
+![Data science](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/data_science.jpg)
 
 ## 4 Data job roles
 | |Role|Description|
@@ -81,6 +92,12 @@ The six phases of the data analysis process help answer business challenges
 |3|Launch new products|
 |4|Serve customers|
 |5|Make thoughtful decisions|
+
+### Hindsight -> Insight -> Foresight
+- Descriptive: What happened?
+- Diagnostic: Why did it happen?
+- Predictive: What will happen?
+- Prescriptive: How can we make it happen?
 
 ### Three disciplines
 | |Discipline|
