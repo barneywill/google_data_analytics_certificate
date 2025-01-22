@@ -149,7 +149,7 @@ Single, quantifiable type of data that can be used for measurement
 - ROI(Return On Investment): A formula that uses the metrics of investment and profit to evaluate the success of an investment
 - Customer retention rates
 - Bed occupancy rate
-- Turnover rate
+- Turnover rate: The rate at which employees voluntarily leave a company
 
 ### Metric Goal
 A measurable goal set by a company and evaluated using metrics
@@ -254,10 +254,22 @@ communicate clearly, establish trust, and deliver your findings across groups.
 - Who is managing the data?
 - Where can you go for help?
 
+### 9.4 Communication effectively
+- Who your audience is
+- What they already know
+- What they need to know
+- How you can communicate that effectively to them
+
+### 9.5 Conflict resolution
+From conflict to collaboration
+- Reframe the problem: Restating a problem or challenge, then redirecting it toward a potential resolution
+- Discussion: start a conversation
+- Understand the context
+
 ## 10 Case study
 | |Category|Case|
 |---|---|---|
-|1|SMART|SMART questions|
-|2|Data-driven decisions vs Data-inspired decisions|AB testing, customer experience improvement|
-|3|Failure|Coke launch failure, Mars Orbiter loss|
+|1|SMART|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/2.Ask/Case1%20SMART%20questions.md'>SMART questions</a>|
+|2|Data-driven decisions vs Data-inspired decisions|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/2.Ask/Case2%20AB%20testing%20and%20customer%20experience%20improvement.md'>AB testing, customer experience improvement</a>|
+|3|Failure|<a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/2.Ask/Case3%20data%20analysis%20failures.md'>Coke launch failure, Mars Orbiter loss</a>|
 
