@@ -8,7 +8,10 @@
 |4|Data table|
 |5|Data bias|
 |6|Good data vs Bad data|
-|7||
+|7|Data ethics|
+|8|Database|
+|9|Data cleaning|
+|10|Organizing data|
 
 What to learn:
 - How data is generated
@@ -151,5 +154,54 @@ the process of protecting people's private or sensitive data by eliminating that
 - https://www.opendatanetwork.com/
 - https://cloud.google.com/datasets
 - https://datasetsearch.research.google.com/
+- https://cloud.google.com/public-datasets
+- https://www.kaggle.com/datasets?utm_medium=paid&utm_source=google.com+search&utm_campaign=datasets&gclid=CjwKCAiAt9z-BRBCEiwA_bWv-L6PpACh6RzmrJjQjmNGCCE7kky1FCtc6Jf1qld-4NwDMYL0WsUyxBoCdwAQAvD_BwE
+- https://cloud.google.com/bigquery/public-data
 
+## 8 Database
+- Database: A collection of data stored in a computer system
+- Relational database: A database that contains a series of related tables that can be connected via their relationships
+
+### 8.1 Key
+- Primary key: An identifier that references a column in which each value is unique. Uniquely identifies a record in a relational database table.
+- Foreign key: A field within a table that is a primary key in another table
+
+### 8.2 SQL
+
+### 8.3 metadata
+Data about data. 
+It clearly describes how and when data was collected and how it’s organized.
+- Descriptive: describes a piece of data and can be used to identify it at any time
+- Structural: describes how many locations contain a certain piece of data
+- Administrative: indicates the technical source of a digital asset
+
+### 8.4 Data governance
+A process to ensure the formal management of a company's data assets.
+
+## 9 Data cleaning
+Data cleaning corrects or removes incorrect, missing, and faulty data. Cleaning data is of critical importance because an analysis based on dirty data can lead to wrong conclusions and bad decisions.
+
+### 9.1 Spreadsheet
+Sorting and Filtering
+
+## 10 Organizing data
+- Naming conventions
+  - CamelCase
+  - snake_case
+- Foldering
+- Archiving older files
+- Align your naming and storage practices with your team
+- Develop metadata practices
+
+### File-naming conventions
+File names are supposed to be meaningful, consistent, and easy-to-read. File names should include:
+- The project’s name
+- The file creation date
+- Revision version
+- Consistent style and order
+
+## 11 Data security
+protecting data from unauthorized access or corruption by putting safety measures in place.
+- Encryption: uses a unique algorithm to alter data and make it unusable by users and applications that don’t know the algorithm.
+- Tokenization: replaces the data elements you want to protect with randomly generated data referred to as a “token.”
 

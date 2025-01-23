@@ -191,6 +191,9 @@ A function is a preset command that automatically performs a specific process or
 - vlookup: VLOOKUP(G3,\$B\$4:\$D\$8,3,FALSE)
 - datedif: DATEDIF(B2,C2,"M")
 - text: TEXT(B2,"mmmm")
+- importrange: IMPORTRANGE("https://docs.google.com/thisisatestabc123", "sheet1!A1:F13")
+- importhtml
+- importdata
 
 #### 7.2 Tableau
 Tableau is used to create powerful and interactive visualizations, making it an excellent choice for data visualizations such as live dashboards. Tableau also makes it easy to create charts, graphs, and dashboards in a drag-and-drop interface. The application  supports a wide range of data sources and provides advanced analytics capabilities. These features allow for in-depth exploration of data trends and patterns. 
