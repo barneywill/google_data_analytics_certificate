@@ -1,4 +1,6 @@
+# A/B testing
 
+A/B testing (or split testing) tests two variations of the same web page to determine which page is more successful in attracting user traffic and generating revenue. User traffic that gets monetized is known as the conversion rate. A/B testing allows marketers to test emails, ads, and landing pages to find the data behind what is working and what isn’t working. 
 
 ## 1 Data-driven decisions
 
