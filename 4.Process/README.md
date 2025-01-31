@@ -3,7 +3,10 @@
 | |Index|
 |---|---|
 |1|Data integrity|
-
+|2|Dirty data|
+|3|Spreadsheet functions vs SQL|
+|4|Verification|
+|5|Case study|
 
 
 What to learn:
@@ -83,13 +86,85 @@ Data validation: A tool for checking the accuracy and quality of data before add
 - Inconsistent data: Any data that uses different formats to represent the same thing
 
 ### 2.3 Data cleaning
+Cleaning data is an important part of the data analysis process. If data analysis is based on bad or “dirty” data, it may be biased, erroneous, and uninformed.
 - Fixing misspellings
 - Inconsistent capitalization
 - Incorrect punctuation and other types
 
+### 2.4 Common mistakes
+- Not checking for spelling errors
+- Forgetting to document errors
+- Not checking for misfielded values
+- Overlooking missing values
+- Only looking at a subset of the data
+- Losing track of business objectives
+- Not fixing the source of the error
+- Not analyzing the system prior to data cleaning
+- Not backing up your data prior to data cleaning
+- Not accounting for data cleaning in your deadlines/process
 
+### 2.5 Cleaning checklist
+- Determine the size of the dataset
+- Determine the number of categories or labels
+- Identify missing data
+- Identify unformatted data
+- Explore the different data types
 
-## Case study
+## 3 Spreadsheet functions vs SQL
+|Spredsheet|SQL|
+|---|---|
+|LEN(A2)|length(col1)|
+|LEFT(A2, 5)|substr(col1, 1, 5), |
+|RIGHT(A2, 4)|substr(col1, -4, 4)|
+|MID(D2, 4, 2)|substr(col1, 4, 2)|
+|TRIM(C2)|trim(col1)|
+|CONCATENATE(H2, I2)|concat(col1, col2)|
+| |select col1, concat_ws(col2) from tb1 group by col1|
+|SPLIT(F2, "-")|substring_index(col1, '-', 1), substring_index(col1, '-', -1)|
+|UNIQUE(C:C)|distinct col1|
+|SORT(C:C)|sort by col1|
+|COUNT(C:C)|count(col1)|
+|COUNTIF(I2:I72, ">100")|select count(col1) from tb1 where col1 > 100|
+|DATEDIF(B2,C2,"M")|DATEDIFF(date1, date2)|
+|VLOOKUP(G3,\$B\$4:\$D\$8,3,FALSE)|select tb1.*, tb2.col2 from tb1 left join tb2 on tb1.col1 = tb2.col1|
+|FILTER(A2:B26, A2:A26 > 5, D2:D26 < 10)|where col1 > 5|
+|IF(A2>0, "N", A2)|case when col1 > 0 then 'N' else col1 end|
+| |cast(col1 as float)|
+| |ifnull(col, 0), coalesce(col1, 0)|
+|Pivot Table|group by col1|
+
+## 4 Verification
+A process to confirm that a data-cleaning effort was well-executed and the resulting data is accurate and reliable
+
+### 4.1 Verification checklist
+- Sources of errors: Did you use the right tools and functions to find the source of the errors in your dataset?
+- Null data: Did you search for NULLs using conditional formatting and filters?
+- Misspelled words: Did you locate all misspellings?
+- Mistyped numbers: Did you double-check that your numeric data has been entered correctly?
+- Extra spaces and characters: Did you remove any extra spaces or characters using the TRIM function?
+- Duplicates: Did you remove duplicates in spreadsheets using the Remove Duplicates function or DISTINCT in SQL?
+- Mismatched data types: Did you check that numeric, date, and string data are typecast correctly?
+- Messy (inconsistent) strings: Did you make sure that all of your strings are consistent and meaningful?
+- Messy (inconsistent) date formats: Did you format the dates consistently throughout your dataset?
+- Misleading variable labels (columns): Did you name your columns meaningfully?
+- Truncated data: Did you check for truncated or missing data that needs correction?
+- Business Logic: Did you check that the data makes sense given your knowledge of the business? 
+
+### 4.2 Changelog
+A file containing a chronologically ordered list of modifications made to a project
+- Recover data-cleaning errors
+- Inform other users of changes
+- Determine quality of data
+
+### 4.3 Types of changes
+- Added: new features introduced
+- Changed: changes in existing functionality
+- Deprecated: features about to be removed
+- Removed: features that have been removed
+- Fixed: bug fixes
+- Security: lowering vulnerabilities
+
+## 5 Case study
 | |Category|Case|
 |---|---|---|
 |1|Proxy data|Proxy data|

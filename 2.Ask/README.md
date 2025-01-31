@@ -187,10 +187,21 @@ A function is a preset command that automatically performs a specific process or
 - count
 - min
 - max
-- countif: COUNTIF('raw data'!G:G,A2)
+- len: LEN(A2)
+- left: LEFT(A2, 5)
+- right: RIGHT(A2, 4)
+- mid: MID(D2, 4, 2)
+- concatenate: CONCATENATE(H2, I2)
+- trim: TRIM(C2)
+- split: SPLIT(F2, "-")
+- unique:
+- sort: 
+- countif: COUNTIF('raw data'!G:G,A2), COUNTIF(I2:I72, ">100")
 - vlookup: VLOOKUP(G3,\$B\$4:\$D\$8,3,FALSE)
 - datedif: DATEDIF(B2,C2,"M")
 - text: TEXT(B2,"mmmm")
+- query: QUERY(A2:E6,"select avg(A) pivot B"), QUERY(A2:E6,F2,FALSE)
+- filter: FILTER(A2:B26, A2:A26 > 5, D2:D26 < 10)
 - importrange: IMPORTRANGE("https://docs.google.com/thisisatestabc123", "sheet1!A1:F13")
 - importhtml
 - importdata
