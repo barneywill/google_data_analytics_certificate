@@ -117,20 +117,28 @@ Cleaning data is an important part of the data analysis process. If data analysi
 |LEFT(A2, 5)|substr(col1, 1, 5), |
 |RIGHT(A2, 4)|substr(col1, -4, 4)|
 |MID(D2, 4, 2)|substr(col1, 4, 2)|
+|FIND(" ", C3)|position('ab' in 'abc')
 |TRIM(C2)|trim(col1)|
-|CONCATENATE(H2, I2)|concat(col1, col2)|
-| |select col1, concat_ws(col2) from tb1 group by col1|
+|CONCATENATE(H2, I2)|concat(col1, '.', col2), concat_ws('.', col1, col2)|
+| |select col1, group_concat(col2) from tb1 group by col1|
 |SPLIT(F2, "-")|substring_index(col1, '-', 1), substring_index(col1, '-', -1)|
 |UNIQUE(C:C)|distinct col1|
 |SORT(C:C)|sort by col1|
 |COUNT(C:C)|count(col1)|
 |COUNTIF(I2:I72, ">100")|select count(col1) from tb1 where col1 > 100|
+|SUM(C:C)|sum(col1)|
+|SUMIF(B3:B50, "=1", C3:C50)|select sum(col1) from tb1 where col2 = 1|
+|SUMPRODUCT(B3:B7,C3:C7)|select sum(col1*col2) from tb1|
+|AVERAGE(C:C)|avg(col1)|
 |DATEDIF(B2,C2,"M")|DATEDIFF(date1, date2)|
+| |DATE_FORMAT("2017-06-15", "%Y")|
 |VLOOKUP(G3,\$B\$4:\$D\$8,3,FALSE)|select tb1.*, tb2.col2 from tb1 left join tb2 on tb1.col1 = tb2.col1|
 |FILTER(A2:B26, A2:A26 > 5, D2:D26 < 10)|where col1 > 5|
 |IF(A2>0, "N", A2)|case when col1 > 0 then 'N' else col1 end|
-| |cast(col1 as float)|
+|VALUE(A2), TEXT(B2,"mmmm")|cast(col1 as float)|
 | |ifnull(col, 0), coalesce(col1, 0)|
+| |round(col1, 2)|
+|IMPORTRANGE("https://docs.google.com/thisisatestabc123", "sheet1!A1:F13")|insert into tb2 select * from tb1|
 |Pivot Table|group by col1|
 
 ## 4 Verification

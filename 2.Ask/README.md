@@ -162,7 +162,9 @@ https://s3.amazonaws.com/looker-elearning-resources/Requirements+Gathering+Works
 Both Sheets and Excel are go-to choices for creating static charts and graphs. They offer basic data visualization capabilities that are often enough for simple visualizations. In addition, you can use them to  clean, sort, and filter data. And both offer a range of chart types, graphing tools, and pivot tables for creating effective data visualizations. These charts are easy to manage; they update when the source data is updated, so they don’t require much manual intervention once implemented. 
 
 ##### 7.1.1 Pivot table
-A pivot table is a data summarization tool that is used in data processing. Pivot tables are used to summarize, sort, re-organize, group, count, total, or average data stored in a database.
+A pivot table is a data summarization tool that is used in data processing. Pivot tables are used to summarize, sort, re-organize, group, count, total, or average data stored in a database. Pivot tables are a spreadsheet tool that let you view data in multiple ways to find insights and trends. 
+
+- Calculated field: A new field within a pivot table that carries out certain calculations based on the values of other fields
 
 ##### 7.1.2 formula
 A formula is a set of instructions used to perform a calculation using the data in a spreadsheet.
@@ -187,6 +189,8 @@ A function is a preset command that automatically performs a specific process or
 - count
 - min
 - max
+- sumif: SUMIF(B3:B50, "=1", C3:C50)
+- countif: COUNTIF('raw data'!G:G,A2), COUNTIF(I2:I72, ">100")
 - len: LEN(A2)
 - left: LEFT(A2, 5)
 - right: RIGHT(A2, 4)
@@ -195,8 +199,7 @@ A function is a preset command that automatically performs a specific process or
 - trim: TRIM(C2)
 - split: SPLIT(F2, "-")
 - unique:
-- sort: 
-- countif: COUNTIF('raw data'!G:G,A2), COUNTIF(I2:I72, ">100")
+- sort: =SORT(A2:D6, 2, TRUE)
 - vlookup: VLOOKUP(G3,\$B\$4:\$D\$8,3,FALSE)
 - datedif: DATEDIF(B2,C2,"M")
 - text: TEXT(B2,"mmmm")
