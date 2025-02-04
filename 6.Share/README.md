@@ -3,7 +3,15 @@
 | |Index|
 |---|---|
 |1|Data visualization|
-
+|2|Types of visualization|
+|3|The elements of art|
+|4|Principles of design|
+|5|Highlight key informatio|
+|6|Tableau|
+|7|Effective visualization|
+|8|Data storytelling|
+|9|Presentation|
+|10|Case study|
 
 What to learn:
 - Design thinking
@@ -45,6 +53,13 @@ All four elements need to be present to create an effective visual.
 - Goal: a specific objective or function for the visual, makes the data usable and useful
 - Visual form: an effective use of metaphor or visual expression, creates both beauty and structure
 
+#### Steps
+- 1. Introduce the graphic by name
+- 2. Answer obvious questions before they’re asked
+- 3. State the insight of your graphic
+- 4. Call out data to support that insight
+- 5. Tell your audience why it matters
+
 https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization#t-150183
 
 https://artscience.ai/blog/
@@ -77,11 +92,12 @@ Channels are visual aspects or variables that represent characteristics of the d
 
 ## 2 Types of visualization
 What is the best way to tell the story within my data?
-- Bar graphs: Use size contrast to compare two or more values
+- Bar/Column graphs: Use size contrast to compare two or more values
+  - Stacked column charts
+  - Ranked bar charts
 - Line charts: Used to track changes over short and long periods of time. 
   - When smaller changes exist, line charts are better to use than bar graphs.
-- Combo charts
-- Stacked column charts
+- Combo charts: Column + Line
 - Pie charts: Show how much each part of something makes up the whole
   - The pie chart is a circular graph that is divided into segments representing proportions corresponding to the quantity it represents, especially when dealing with parts of a whole.
 - Heatmap: Use color to compare categories in a data set.
@@ -90,7 +106,7 @@ What is the best way to tell the story within my data?
 - Maps: Help organize data geographically
 - Time series charts
 - Histogram: A chart that shows how often data values fall into certain ranges
-- Ranked bar charts
+  - Histograms are drawn with no gaps between the bars, representing numerical data, while bar graphs show rectangular bars with length proportional to the values they represent.
 - Correlation charts: Show relationships among data
 
 ### 2.1 Decision tree
@@ -123,14 +139,11 @@ A decision tree is a flowchart that you can use to help frame larger decisions a
 
 https://www.khanacademy.org/test-prep/praxis-math/praxis-math-lessons/gtp--praxis-math--lessons--statistics-and-probability/a/gtp--praxis-math--article--correlation-and-causation--lesson
 
-## 3 Dynamic visualization
+## 2.5 Dynamic visualization
 - Static visualizations: Don't change over time unless they're edited
 - Dynamic visualizations: Visualizations that are interactive or change over time
 
-### 3.1 Tableau
-A business intelligence and analytics platform that helps people see, understand, and make decisions with data.
-
-## 4 The elements of art
+## 3 The elements of art
 - Line
 - Shape
 - Color
@@ -140,7 +153,7 @@ A business intelligence and analytics platform that helps people see, understand
 - Space
 - Movement
 
-## 5 Principles of design
+## 4 Principles of design
 - 1. Balance: The design of a data visualization is balanced when the key visual elements, like color and shape, are distributed evenly.
 - 2. Emphasis: Your data visualization should have a focal point, so that your audience knows where to concentrate. 
 - 3. Movement: Movement can refer to the path the viewer’s eye travels as they look at a data visualization, or literal movement created by animations.
@@ -152,9 +165,137 @@ A business intelligence and analytics platform that helps people see, understand
 - 8. Variety: Your visualizations should have some variety in the chart types, lines, shapes, colors, and values you use. 
 - 9. Unity: The last principle is unity. This means that your final data visualization should be cohesive.
 
+## 5 Highlight key informatio
+- Headlines: Briefly describe the data
+- Subtitles: Clarify context for the data
+- Labels: Replace the need for legends
+- Annotations: Draw attention to certain data
+
+## 6 Tableau
+A business intelligence and analytics platform that helps people see, understand, and make decisions with data
+
+### 6.1 Types of data
+- #: Numeric data
+- Abc: String data
+- Globe: Geographic data
+- Calendar: Date data
+- Calendar: Date and time data
+
+### 6.2 Data elements
+- Dimensions: contain qualitative values (such as names, dates, or geographical data). To categorize, segment, and reveal the details in your data.
+- Measures: contain numeric, quantitative values that you can measure. Measures can be aggregated. 
 
 
-## Case study
+A diverging palette displays two ranges of values using color intensity to indicate magnitude.
+
+### 6.3 Avoid misleading or deceptive charts
+- Cutting off the y-axis
+- Misleading use of a dual y-axis
+- Artificially limiting the scope of the data
+- Problematic choices in how data is binned or grouped
+- Using part-to-whole visuals when the totals do not sum up appropriately 
+- Hiding trends in cumulative charts
+- Artificially smoothing trends
+
+### 6.4 Dashboard
+A tool that organizes information from multiple datasets into one central location for tracking, analysis, and simple visualization
+
+https://medium.com/towards-data-science/the-ultimate-cheat-sheet-on-tableau-charts-642bca94dde5
+
+https://public.tableau.com/app/profile/grow.with.google/vizzes#!/
+
+## 7 Effective visualization
+The key to effective presentations is data visualizations that are clear and convincing. In turn, the key to effective visualizations is selecting the best way to depict your data. 
+- Five-second rule: A data visualization should be clear, effective, and convincing enough to be absorbed in five seconds or less.
+- Color contrast: Graphs and charts should use a diverging color palette to show contrast between elements.
+- Conventions and expectations: Visuals and their organization should align with audience expectations and cultural conventions. For example, if the majority of your audience associates green with a positive concept and red with a negative one, your visualization should reflect this.
+- Minimal labels: Titles, axes, and annotations should use as few labels as it takes to make sense. Having too many labels makes your graph or chart too busy. It takes up too much space and prevents the labels from being shown clearly.
+
+## 8 Data storytelling
+Communicating the meaning of a dataset with visuals and a narrative that are customized for each particular audience.
+- In data analytics, data storytelling is communicating the meaning of a dataset with visuals and a narrative that is customized for a particular audience. 
+- In data journalism, journalists engage their audience of readers by combining visualizations, narrative, and context into data-driven articles.
+
+### 8.1 Steps
+- Engage your audience
+  - Engagement: Capturing and holding someone's interest and attention
+- Create compelling visuals
+- Tell the story in an interesting narrative
+
+### 8.2 Spotlighting
+Scanning through data to quickly identify the most important insights
+
+### 8.3 Storytelling
+A data story must have a good plot (theme and flow), good dialogue (talking points), and a great ending or big reveal (results and conclusions).
+- Characters
+- Setting
+- Plot
+- Big reveal
+- Aha moment
+
+## 9 Presentation
+Good presentation: people are logically guided through the data – from the objectives at the beginning all the way to the conclusions at the end.
+
+A good presentation gives people in the audience the facts and data, helps them understand what the data means, and provides takeaways about how they can use their understanding to make a change or do some good.
+- Include a title, subtitle, and date
+- Use a logical sequence of slides
+- Provide an agenda with a timeline
+- Limit the amount of text on slides
+- Start with the business task
+- Establish the initial hypothesis
+- Show what business metrics you used
+- Use visualizations
+- Introduce the graphic by name
+- Provide a title for each graph
+- Go from the general to the specific
+- Use speaker notes to help you remember talking points
+- Include key takeaways
+
+### 9.1 Presentation tips
+- Channel your excitement
+- Start with the broader ideas
+- Use the five second rule
+  - Wait five seconds after showing a data visualization
+  - Ask if they understand
+  - Give your audience another five seconds
+  - Tell them the conclusion
+- Preparation is key
+
+### 9.2 Slide deck layout
+- First slide: Agenda 
+  - Introductions (4 minutes)
+  - Project overview and goals (5 minutes)
+  - Data and analysis (10 minutes)
+  - Recommendations (3 minutes)
+  - Actionable steps (3 minutes)
+  - Questions (5 minutes)
+- Second slide: Purpose
+  - This slide summarizes the purpose of the project and why it is important to the business for your audience.
+- Third slide: Data/analysis
+- Fourth slide: Recommendations
+  - Be ready to communicate how your data backs up your conclusion or recommendations in different ways.
+- Fifth slide: Call to action
+
+### 9.3 Presentation evaluation checklist
+A well-crafted presentation bridges the gap between complex data and actionable insights. 
+- Do I use an attention-grabbing opening?
+- Do I start with broad ideas and later talk about specific details?
+- Do I speak in short sentences?
+- Do I pause for five seconds after showing a data visualization?
+- Do I pause intentionally at certain points?
+- Do I keep the pitch of my sentences level?
+- Do I stand still and move with purpose?
+- Do I have good posture?
+- Do I look at my audience (or camera) while speaking?
+- Do I keep my message concise?
+- Do I end by explaining to my audience why the data analysis matters?
+- Do I include a good title and subtitle that describes what I’m about to present?
+- Do I include the date of my presentation or the date when my slideshow was last updated?
+- Does my font size let the audience easily read my slides?
+- Do I showcase what business metrics I used?
+- Do I include effective visuals (like charts and graphs)?
+
+## 10 Case study
 | |Category|Case|
 |---|---|---|
 |1|Correlation and Causation|Correlation and Causation|
