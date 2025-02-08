@@ -71,6 +71,8 @@ Data scientists create new questions using data, while analysts find answers to 
 |5|Data specialist|organizes or converts data for use in databases or software systems|
 |6|Operations analyst|analyzes data to assess the performance of business operations and workflows|
 
+https://medium.com/ds3ucsd/career-paths-within-data-science-4243679c04b9
+
 ![Data job roles](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/data_analyst.jpg)
 
 ## 5 <a href='https://github.com/barneywill/google_data_analytics_certificate/blob/main/1.Foundation/data_analysis_process.md'>Data analysis process</a>

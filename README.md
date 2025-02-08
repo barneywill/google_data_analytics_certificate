@@ -9,4 +9,4 @@
 |5|<a href='https://github.com/barneywill/google_data_analytics_certificate/tree/main/5.Analyze'>Analyze Data to Answer Questions</a>|Analysis, Data validation, Aggregation|
 |6|<a href='https://github.com/barneywill/google_data_analytics_certificate/tree/main/6.Share'>Share Data Through the Art of Visualization</a>|Data visualization, Types of visualization, Principles of design, Effective visualization, Data storytelling, Tableau, Presentation|
 |7|<a href='https://github.com/barneywill/google_data_analytics_certificate/tree/main/7.R'>Data Analysis with R Programming</a>|Packages, Pipe, Data types, Operators, Data structures, Date time, Files, Datasets, If, Biased data, R Markdown|
-|8|<a href='https://github.com/barneywill/google_data_analytics_certificate/tree/main/8.Capstone'>Capstone: Complete a Case Study</a>||
+|8|<a href='https://github.com/barneywill/google_data_analytics_certificate/tree/main/8.Capstone'>Capstone: Complete a Case Study</a>|Guiding questions & Key tasks|
