@@ -29,15 +29,5 @@ ggplot(data=penguins,aes(x=flipper_length_mm,y=body_mass_g)) + geom_point(aes(sh
 ggplot(data=penguins,aes(x=flipper_length_mm,y=body_mass_g)) + geom_point(aes(shape=species, color=species)) + facet_wrap(~species) + labs(title="Penguin Body Mass vs Flipper Length", x="Flipper Length (mm)", y="Body Mass (g)") 
 
 
-s <- "hello"
-i <- 123
-v <- c(1,2,3,4,5)
-
-
-install.packages("tidyverse")
-library(tidyverse)
-library(lubridate)
-
-
 
 

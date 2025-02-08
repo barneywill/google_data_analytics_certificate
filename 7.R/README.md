@@ -11,6 +11,9 @@
 |1.7|Files|
 |1.8|Datasets|
 |1.9|If|
+|1.10|Biased data|
+|1.11|R Markdown|
+|1.12|Case study|
 
 What to learn:
 - Programming languages and environments
@@ -49,12 +52,12 @@ browseVignettes("ggplot2")
 library('class')
 ```
 
-#### CRAN(Comprehensive R Archive Network)
+#### 1.1.1 CRAN(Comprehensive R Archive Network)
 the most commonly used repository
 
 CRAN stores code and documentation so that you can install packages into your own RStudio space. 
 
-#### Tidyverse
+#### 1.1.2 Tidyverse
 the tidyverse is a collection of R packages specifically designed for working with data: manipulation, exploration, and visualization
 - ggplot2: Create a variety of data viz by applying different visual properties to the data variables in R
 - tidyr: A package used for data cleaning to make tidy data
@@ -76,12 +79,25 @@ diamonds %>% mutate(carat_2=carat*100)
 separate(employee, name, into=c('first_name', 'last_name'), sep=' ')
 unite(employee, 'name', first_name, last_name, sep=' ')
 mutate(employee, name=first_name + ' ' + last_name)
+
+?mutate
 ```
 
 ![Tidyverse](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/tidyverse.jpg)
 
-#### ggplot2
+#### 1.1.3 ggplot2
+The ggplot2 package lets you make high quality, customizable plots of your data. 
+The ggplot2 is based on the grammar of graphics, which is a system for describing and building data visualizations
+- Create different types of plots
+- Customize the look and feel of plots
+- Create high quality visuals
+- Combine data manipulation and visualization
 
+The ggplot() function creates a coordinate system that you can add layers to. The first argument of the ggplot() function is the dataset to use in the plot.
+
++: Then, you add a “+” symbol to add a new layer to your plot.
+
+The x and y arguments of the aes() function specify which variables to map to the x-axis and the y-axis of the coordinate system. 
 ```
 library(ggplot2)
 data("diamonds")
@@ -89,9 +105,96 @@ view(diamonds)
 head(diamonds)
 str(diamonds)
 colnames(diamonds)
+
+ggplot(data = penguins) + 
+    geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color=species, shape=species, size=species, alpha=species)) +
+    geom_smooth(mapping = aes(x = flipper_length_mm, y = body_mass_g, linetype=species))
+
+ggplot(data = penguins) + 
+    geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color=species)) +
+    facet_grid(sex~species)
+
+ggplot(diamonds) + 
+    geom_bar(mapping=aes(x=cut, fill=cut))
+
+ggplot(diamonds) + 
+    geom_bar(mapping=aes(x=cut, fill=clarity))
+
+ggplot(diamonds) + 
+    geom_bar(mapping=aes(x=color, fill=cut)) +
+    facet_wrap(~cut)
 ```
 
-#### tibbles
+##### 1.1.3.1 Aesthetics
+A visual property of an object in your plot.
+An aesthetic is like a connection, or mapping, between a visual feature in your plot and a variable in your data. For example, in a scatterplot, aesthetics include things like the size, shape, color, or location (x-axis, y-axis) of your data points. 
+
+##### 1.1.3.2 Geoms
+The geometric object used to represent your data, use points to create a scatterplot, bars to create a bar chart, lines to create a line diagram, etc.
+- geom_point
+- geom_bar 
+- geom_line
+- geom_smooth
+- geom_jitter
+
+###### Smoothing
+Smoothing helps data professionals reveal trends.
+- Loess smoothing: The loess smoothing process is best for smoothing plots with less than 1000 points.
+  - geom_smooth(method="loess")
+- Gam smoothing: Gam(generalized additive model) smoothing, or generalized additive model smoothing, is useful for smoothing plots with a large number of points. 
+  - geom_smooth(method="gam", formula = y ~s(x))
+
+##### 1.1.3.3 Facets
+Let you display smaller groups, or subsets, of your data
+- facet_wrap()
+- facet_grid()
+
+Tilde operator is used to define the relationship between dependent variable and independent variables in a statistical model formula. The variable on the left-hand side of tilde operator is the dependent variable and the variable(s) on the right-hand side of tilde operator is/are called the independent variable(s). So, tilde operator helps to define that dependent variable depends on the independent variable(s) that are on the right-hand side of tilde operator.
+```
+ggplot(data=penguins) + 
+    geom_point(aes(x=flipper_length_mm,y=body_mass_g, shape=species, color=species)) + 
+    facet_wrap(~species)
+```
+
+##### 1.1.3.4 Labels and annotations
+Let you customize your plot
+- Titles
+- Subtitles
+- Captions
+
+```
+ggplot(data = penguins) + 
+    geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color=species)) +
+    labs(title='test title', subtitle='test subtitle', caption='test caption') +
+    annotate('text', x=220, y=3500, label='test label', color='purple', fontface='bold', size=4.5, angle=25)
+```
+
+https://rstudio.github.io/cheatsheets/data-visualization.pdf
+
+![ggplot2](https://github.com/barneywill/google_data_analytics_certificate/blob/main/imgs/ggplot2.jpg)
+
+##### 1.1.3.5 Others
+- Plotly
+- Lattice
+- RGL
+- Dygraphs
+- Leaflet
+- Highcharter
+- Patchwork
+- gganimate
+- ggridges
+
+##### 1.1.3.6 ggsave
+```
+# default last plot
+ggsave('filename')
+```
+
+###### Others
+- png()
+- pdf()
+
+#### 1.1.4 tibbles
 - Efficiently explore data
 - Maintain consistency and data integrity
 - Integrate with the tidyverse
@@ -102,7 +205,7 @@ diamonds_tibble <- as_tibble(diamonds)
 diamonds_tibble
 ```
 
-#### readr
+#### 1.1.5 readr
 The readr package in R is a great tool for reading rectangular data.
 - read_csv(): comma-separated values (.csv) files
 - read_tsv(): tab-separated values files
@@ -116,7 +219,7 @@ readr_example()
 read_csv(readr_example("mtcars.csv"))
 ```
 
-#### readxl
+#### 1.1.6 readxl
 ```
 library(readxl)
 
@@ -125,7 +228,7 @@ readxl_example()
 read_excel(readxl_example("type-me.xlsx"), sheet = "numeric_coercion")
 ```
 
-#### tidyr
+#### 1.1.7 tidyr
 convert wide data to long data or long to wide
 - wide data: has observations across several columns
 - long data: has all the observations in a single column, and the variable conditions are placed into separate rows. 
@@ -134,7 +237,7 @@ pivot_longer()
 pivot_wider()
 ```
 
-#### dplyr
+#### 1.1.8 dplyr
 ```
 install.packages('dplyr')
 library('dplyr')
@@ -165,6 +268,11 @@ penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_length_mm = m
 penguins %>% group_by(species, island) %>% drop_na() %>% summarize(max_bl = max(bill_length_mm), mean_bl = mean(bill_length_mm))
 penguins %>% filter(species == 'Adelie')
 
+data %>%
+    filter(variable1 == "DS") %>%  
+    ggplot(aes(x = weight, y = variable2, colour = variable1)) +  
+    geom_point(alpha = 0.3,  position = position_jitter()) + stat_smooth(method = "lm")
+
 penguins %>%
     rename(island_new=island)
 
@@ -173,7 +281,7 @@ rename_with(penguins, toupper)
 clean_names(penguins)
 ```
 
-#### Tmisc
+#### 1.1.9 Tmisc
 ```
 install.packages('Tmisc')
 library(Tmisc)
@@ -183,7 +291,7 @@ view(quartet)
 ggplot(quartet, aes(x,y)) + geom_point() + geom_smooth(method=lm, se=FALSE) + facet_wrap(~set)
 ```
 
-#### datasauRus
+#### 1.1.10 datasauRus
 ```
 install.packages('datasauRus')
 library('datasauRus')
@@ -193,7 +301,7 @@ view(datasaurus_dozen)
 ggplot(datasaurus_dozen, aes(x=x,y=y,colour=dataset)) + geom_point() + theme_void() + theme(legend.position='none') + facet_wrap(~dataset, ncol=3)
 ```
 
-#### SimDesign
+#### 1.1.11 SimDesign
 ```
 install.packages('SimDesign')
 library(SimDesign)
@@ -231,6 +339,7 @@ logical, integer, double, character (which contain strings), complex, and raw
 ```
 # Assignment 
 x <- 2
+s <- "hello"
 
 # Arithmetic 
 x + y
@@ -390,8 +499,43 @@ if (x < 0) {
 
 ### 1.10 Biased data
 R programming offers a diverse toolkit for addressing data bias in various domains. 
+- bias()
 
+### 1.11 R Markdown (RMD) Notebook
+A file format for making dynamic documents with R.
+Lets users run your code and show the graphs and charts that visualize the code.
 
+YAML is a language used in data files to improve human readability, and the YAML header section exists to provide information about a document to the humans reading it.
 
+#### Markdown
+A syntax for formatting plain text files
+
+```
+install.packages('rmarkdown')
+```
+
+#### code chunk
+delimiters
+```
+#```{r}
+#```
+```
+
+##### Output option
+
+#### Knit
+The knit button creates a shareable HTML report of the R Markdown file. 
+
+#### Others
+Jupyter notebooks are documents that contain computer code and rich text elements – such as comments, links, or descriptions of your analysis and results.
+- Jupyter
+  - JupyterLab – the web-based interactive development environment for Jupyter notebooks, code, and data. 
+- Kaggle
+- Google Colab
+
+### 1.12 Case study
+| |Category|Case|
+|---|---|---|
+|1|Bias|Biased Data|
 
 
